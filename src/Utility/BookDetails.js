@@ -4,7 +4,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { BookContext } from './BookContext';
 
 
-const Bookdetails = props => {
+const BookDetails = props => {
 
 
     const savedBook = useContext(BookContext);
@@ -16,7 +16,7 @@ const Bookdetails = props => {
     }, []);
 
 
-    if (!savedBook || savedBook.title == "") {
+    if (!savedBook) {
         return (
             <div>No book selected. </div>
         );
@@ -50,4 +50,4 @@ const Bookdetails = props => {
     );
 };
 
-export default Bookdetails;
+export default BookDetails;

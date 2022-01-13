@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from 'react';
 import '../App.css';
-import Navigation from './Navigation';
-import Bookdetails from './Bookdetails';
+
+import Bookdetails from './BookDetails';
 import { useHistory, context, Link } from "react-router-dom";
 import { Form } from "react-bootstrap";
 

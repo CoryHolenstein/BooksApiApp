@@ -1,6 +1,5 @@
 import '../App.css';
-import Navigation from './Navigation';
-import Milestone1part2 from './Milestone1part2';
+
 import React, { useState, useEffect, useContext } from 'react';
 import { BookContext } from './BookContext';
 import { useHistory, context, NavLink, Link } from "react-router-dom";
