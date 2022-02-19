@@ -4,7 +4,7 @@ import { BookContext } from '../Utility/BookContext';
 import React, { useState, Component, useEffect, createContext, useContext,  useCallback  } from 'react';
 import { useHistory, context, Link } from "react-router-dom";
 import Pagination from '../Utility/Pagination';
-import Bookdetails from '../Utility/BookDetails';
+import BookDetails from './BookDetails'
 import List from '../Utility/List';
 
 
@@ -56,10 +56,10 @@ const [currentView, setCurrentView] = useState("list");
         savedBook.setPublisher(results[bookNumber].volumeInfo.publisher);
         savedBook.setImg(results[bookNumber].volumeInfo.imageLinks.smallThumbnail);
         savedBook.setAuthor(results[bookNumber].volumeInfo.authors);
-        console.log("Saved book", savedBook);
+        console.log("Saved book ", savedBook);
 
         history.push({
-            pathname: '/Bookdetails'
+            pathname: '/BookDetails'
         });
 
     };
@@ -78,7 +78,7 @@ const [currentView, setCurrentView] = useState("list");
                         <input
                              type="text" onChange={handleChange}
                             placeholder="Search"
-                            autoComplete="off"
+                            autoComplete="on"
                         />
                          <button type="submit" value="Search" disabled={!input} >Search </button>
                     </form>

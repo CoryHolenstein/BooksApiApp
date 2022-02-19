@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Pages/Home';
+import BookDetails from './Pages/BookDetails';
 import Error from './Pages/Error';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
                   <Switch>
                       <Route path="/" component={Home} exact />
                       <Route path="/Home" component={Home} />
+                      <Route path="/BookDetails" component={BookDetails} />
                   
                     
 
