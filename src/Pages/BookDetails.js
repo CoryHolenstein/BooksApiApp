@@ -8,7 +8,7 @@ const BookDetails = props => {
 
 
     const savedBook = useContext(BookContext);
-
+    let history = useHistory();
 
     useEffect(() => {
         console.log();
@@ -39,6 +39,7 @@ const BookDetails = props => {
                             Publisher: {savedBook.publisher}
 
                         </h5>
+                        <button type="submit" onClick={() => history.goBack()}> Go Back </button>
 
                     </body>
 

@@ -69,7 +69,8 @@ const [currentView, setCurrentView] = useState("list");
         <div className="App">
     
             <div className="content-home">
-                <center>
+                      <center>
+                          <a href="https://cholenstein-website.web.app/">Back to Home Page</a>
                 <h1> Search </h1>
 
                 <form onSubmit={handleSubmit}>
